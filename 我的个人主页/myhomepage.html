@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>胡骞的主页</title>
+<meta charset="UTF-8">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+#yellow{
+    color:yellow
+    }
+
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+
+.header {
+    padding: 80px;
+    text-align: center;
+    background-image:url(./sky.jpg);
+    background-size: 100% 100%;
+    color: white;
+}
+
+
+.header h1 {
+    font-size: 40px;
+}
+
+
+
+
+
+.row {  
+    display: -ms-flexbox; 
+    display: flex;
+    align-items:center;
+
+    -ms-flex-wrap: wrap; 
+    flex-wrap: wrap;
+}
+
+
+.side {
+    -ms-flex: 0%; 
+    flex: 16%;
+    background-image:url(./dusk.jpg);
+    background-size: 100% 100%;
+    padding: 20px;
+}
+
+
+.main {   
+    -ms-flex: 70%; 
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+.fakeimg {
+   
+    background-color: #aaa;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+@media screen and (max-width: 700px) {
+    .row {   
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+<div class="header">
+
+  <h1>胡骞的个人空间</h1>
+  <p>片云天共远，永夜月同孤</p>
+</div>
+
+
+<div class="row">
+  <div class="side">
+      <h2>关于我</h2>
+      <h5>我的照片:</h5>
+      <div class="fakeimg" style="height:300px;"><img src="pic.jpg" width="300" height="280" /></div>
+      <p>一个爱好广泛的三无青年，刚刚搭建了这个主页，了，好像还需要进一步完善...</p>
+      <h3>更多内容</h3>
+      <p>我的更多内容</p>
+      <p>我的微信：huqian66809</p>
+      <p id="yellow">希望能通过这个主页认识更多人</p>
+
+    
+
+     
+  </div>
+  <div class="main">
+  
+      <h2><a href="./log.html">前端学习期待</a></h2>
+      <div class="fakeimg" style="height:200px;">小学期已经开始了，关于前端学习，有许多的期望...</div>
+      <br>
+      <h2>待补充的日志</h2>
+      <h5>副标题</h5>
+      <div class="fakeimg" style="height:200px;"></div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>联系我：huqian17@163.com</h2>
+</div>
+
+</body>
+</html>
